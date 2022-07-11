@@ -23,26 +23,3 @@ void rev_string(char *s)
 		++i;
 	}
 }
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
--- INSERT --                                                                0,1           All
-
