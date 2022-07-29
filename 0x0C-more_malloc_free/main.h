@@ -1,71 +1,17 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef MAIN_FILE
+#define MAIN_FILE
 
 #include <stdlib.h>
+#include <stdio.h>
 
 int _putchar(char c);
 void *malloc_checked(unsigned int b);
 char *string_nconcat(char *s1, char *s2, unsigned int n);
 void *_calloc(unsigned int nmemb, unsigned int size);
 int *array_range(int min, int max);
+void errors(void);
+int _strlen(char *s);
+int is_digit(char *s);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 
-/*functions for 101-mul.c */
-
-/**
- * err_exit - prints error with _putchar
- *              and exits with 98
- *
- * Return: Error 98 and exit(98)
-*/
-
-int err_exit(void)
-{
-	char *err;
-	int i;
-
-	err = "Error";
-	for (i = 0; err[i] != '\0'; i++)
-		_putchar(err[i]);
-	_putchar('\n');
-	exit(98);
-}
-
-/**
- * _check_number - checks if string has only
- *                numbers
- *
- * @str: string to check
- *
- * Return: 0 is true 1 if false
-*/
-
-int _check_number(char *str)
-{
-	while (*str != '\0')
-	{
-		if (*str < '0' || *str > '9')
-			return (1);
-		str++;
-	}
-	return (0);
-}
-
-/**
- * _length - get the length of strings
- *
- * @str: string to get length of
- *
- * Return: length of string
-*/
-
-int _length(char *str)
-{
-	int i = 0;
-
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-
-#endif /* End Main Header */
+#endif
