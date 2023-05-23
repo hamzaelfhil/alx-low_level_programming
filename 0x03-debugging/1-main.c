@@ -21,4 +21,4 @@ int main(void)
 	printf("Infinite loop avoided! \\o/\n");
 
 	return (0);
-sh: 1: q: not found
+}
